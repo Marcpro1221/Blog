@@ -1,4 +1,4 @@
-body{
+nobody{
     padding: 0;
     margin: 0;
     overflow-x: hidden;
@@ -29,10 +29,10 @@ nav{
     padding: 1%;
     width: 100%;
     background-color: rgb(0, 0, 0, 0.5); 
-    -webkit-backdrop-filter: blur(10px);
-    -moz-backdrop-filter: blur(10px);
-    -ms-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(3px);
+    -moz-backdrop-filter: blur(3px);
+    -ms-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
 }
 nav > ul{
     list-style: none;
@@ -57,6 +57,7 @@ nav > ul > li > button{
 
 .hero-featured{
     display: block;
+    position: relative;
 }
 .title-heading{
     z-index: 1;
@@ -85,9 +86,10 @@ Featured Section-------------------->
     height: 50vh;
 }
 .container > h2{
-    margin-top: 5%;
+    margin-top: 1%;
     font-size: 2rem;
     text-align: center;
+
 }
 .featured-section{
     display: flex;
@@ -167,22 +169,53 @@ Featured Section-------------------->
 .featured{
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 55%;
     transform: translate(-50%,-50%);
     display: flex;
-    background-color: #F6F5F2;
-    padding: 30px;
+    flex-direction: column;
+    gap: 40px;
 }
-.featured > div{
+.featured > div:nth-child(1){
     display: flex;
+    padding: 30px;
+    background-color: #F6F5F2;
     gap: 10px;
+    border-radius: 15px;
 }
 .firstfeatured-img{
     border-radius: 10%;
 }
+.card{
+  width: 25rem;
+}
+.featured > div:nth-child(2){
+   display: flex;
+   gap: 10px;
+}
+.icon-layer{
+  display: inline;
+  padding: 5px;
+  margin-right: 10px;
+}
+.showcase-title{
+  color: whitesmoke;
+}
+.column .card-body{
+  background-color: rgb(0, 0, 0);
+}
+.card-body > h5{
+  color: whitesmoke;
+}
+.featured > div:nth-child(2) > div:nth-child(1) > div{
+    display: flex;
+    flex-direction: row;
+    margin-right: 20%;
+}
+.featured > div:nth-child(2) > div:nth-child(2){
+  display: flex;
+  flex-direction: row;
+}
 
 /* 
-1. remove height and width of featured class
-2. 
-
-*/ 
+Media Query Interface
+*/

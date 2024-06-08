@@ -1,0 +1,24 @@
+@media(max-width:1680px){
+    .title-heading{
+        font-size: 2rem;
+    }
+    .title-heading > p{
+        font-size: 0.8rem;
+    }
+}
+@media(max-width:1500px){
+   .title-heading{
+        font-size: 1.8rem;
+    } 
+    .title-heading > p{
+        font-size: 0.7rem;
+    }
+}
+@media(max-width:1450px){
+    .title-heading{
+        font-size: 1.5rem;
+    } 
+    .title-heading > p{
+        font-size: 0.6rem;
+    }
+}
